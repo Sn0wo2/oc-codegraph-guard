@@ -1,7 +1,12 @@
 {
-  "name": "opencode-codegraph-index-guard",
+  "name": "oc-codegraph-guard",
   "version": "0.1.0",
   "type": "module",
+  "description": "OpenCode2 plugin that enables the codegraph MCP server only while its index database exists",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sn0wo2/oc-codegraph-guard.git"
+  },
   "packageManager": "bun@1.4.4",
   "files": [
     "src"

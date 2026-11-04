@@ -3,7 +3,7 @@
   "configVersion": 1,
   "workspaces": {
     "": {
-      "name": "opencode-codegraph-index-guard",
+      "name": "oc-codegraph-guard",
       "dependencies": {
         "@opencode/plugin": "2.0.18",
       },
