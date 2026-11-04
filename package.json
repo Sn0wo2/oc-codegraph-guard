@@ -1,6 +1,6 @@
 {
   "name": "oc-codegraph-guard",
-  "version": "0.1.0",
+  "version": "0.0.0",
   "type": "module",
   "description": "OpenCode2 plugin that enables the codegraph MCP server only while its index database exists",
   "repository": {
@@ -28,8 +28,8 @@
     "zod@4.1.8": "4.6.6"
   },
   "devDependencies": {
-    "@types/bun": "^1.4.2",
     "@biomejs/biome": "^2.6.4",
+    "@types/bun": "^1.4.2",
     "typescript": "^7.0.2"
   }
 }
