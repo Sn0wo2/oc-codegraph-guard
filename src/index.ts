@@ -1,19 +1,11 @@
-import { existsSync } from "node:fs"
-import { dirname, join, resolve } from "node:path"
+import { join } from "node:path"
 import { Plugin } from "@opencode/plugin"
+import { findUpSync } from "find-up"
 
 export default Plugin.define({
   id: "oc-codegraph-guard",
   setup: async (ctx) => {
-    const exists = () => {
-      let directory = resolve(ctx.location.directory)
-      for (;;) {
-        if (existsSync(join(directory, ".codegraph", "codegraph.db"))) return true
-        const parent = dirname(directory)
-        if (parent === directory) return false
-        directory = parent
-      }
-    }
+    const exists = () => findUpSync(join(".codegraph", "codegraph.db"), { cwd: ctx.location.directory }) !== undefined
 
     const registration = await ctx.mcp.transform((servers) => {
       if (!exists() && servers.get("codegraph")) servers.remove("codegraph")

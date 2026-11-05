@@ -22,14 +22,19 @@
     "ci": "bun run lint && bun run check && bun run security"
   },
   "dependencies": {
-    "@opencode/plugin": "2.0.18"
+    "@opencode/plugin": "2.2.5",
+    "find-up": "8.0.0"
   },
   "overrides": {
-    "zod@4.1.8": "4.6.6"
+    "glob": "14.0.3",
+    "minimatch": "11.0.4"
   },
   "devDependencies": {
-    "@biomejs/biome": "^2.6.4",
-    "@types/bun": "^1.4.2",
+    "@biomejs/biome": "^2.6.5",
+    "@types/bun": "^1.4.4",
+    "graphql": "^16.15.0",
+    "graphql-request": "^7.4.0",
+    "semver": "^7.8.6",
     "typescript": "^7.0.2"
   }
 }
