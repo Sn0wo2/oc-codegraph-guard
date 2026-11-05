@@ -33,7 +33,6 @@
     "@biomejs/biome": "^2.6.5",
     "@types/bun": "^1.4.4",
     "graphql": "^16.15.0",
-    "graphql-request": "^7.4.0",
     "semver": "^7.8.6",
     "typescript": "^7.0.2"
   }
